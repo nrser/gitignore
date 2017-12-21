@@ -1,0 +1,30 @@
+# NOTE @nrser 2017.12.21
+# 
+# Broken out from `//Ruby.gitignore` because:
+# 
+# 1.  Most Ruby projects don't use RubyMotion - it's a specialty environment, 
+#     and doesn't make much sense to me to include in *every* Ruby project.
+#     
+#     This gitignore can be added in cases when RubyMotion is actually being 
+#     used.
+#     
+# 2.  The excerpt ignores `build/`, which applies to *any* directory named 
+#     build in the entire sub-tree, which seems like a huge overreach 
+#     considering (1) and how common the term 'build' is in software.
+# 
+
+## Specific to RubyMotion:
+.dat*
+.repl_history
+build/
+*.bridgesupport
+build-iPhoneOS/
+build-iPhoneSimulator/
+
+## Specific to RubyMotion (use of CocoaPods):
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# vendor/Pods/
