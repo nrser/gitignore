@@ -1,3 +1,17 @@
+# General Git ignore file for Ruby, including support for:
+# 
+# -   Bundler
+# -   RDoc and Yard
+# -   RBEnv and RVM
+# -   DotEnv (optional)
+# 
+# Additional support is available in separate ignore files:
+# 
+# -   Gem.gitignore (for gem source directories)
+# -   Rails.gitignore
+# -   RubyMotion.gitignore
+# 
+
 /*.gem
 *.rbc
 /.config
@@ -24,11 +38,7 @@
 /vendor/bundle
 /lib/bundler/man/
 
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
+# for a library or gem, add `Gem.gitignore`
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
