@@ -1,0 +1,25 @@
+# Patterns that are only applicable if you are packaging and distributing
+# your Python source.
+# 
+# Moved here from `//Python.gitignore` because they include several common
+# directory names *that are ignored anywhere in the directory tree* and you
+# probably don't want or need those sweeping effects for the common case of 
+# ignoring `*.pyc` and the like.
+# 
+
+.Python
+# env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
